@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fcontainer {
+    background-color: rgb(122, 201, 201);
+    padding: 10px 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.brand-logo {
+    width: 75px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+}
+
+.firstname {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+}
+
+.lastname {
+    font-size: 1.5rem;
+    margin-left: 5px;
+    font-weight: normal;
+    color: rgb(189, 25, 204);
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin-left: 2px;
+}
+
+.navigation a {
+    color: #f1ecec;
+    text-decoration: none;
+    font-size: 1.3rem; /*untuk membesarkan ukuran text */
+    background-color: rgb(70, 78, 85);
+    padding: 8px;
+    margin: 9px;
+    border-radius: 5px;
+}
+
+.navigation a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* web_menu/css/section-menu.css */
+
+.section-menu {
+    background-color: rgb(223, 211, 211);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Menambahkan overflow */
+    transition: transform 0.2s;
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #7c7a7a;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}

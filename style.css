@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #010c16;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: url('bghom.jpg'); /* Ganti dengan path gambar latar Anda */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+   color: red;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.profile-pic {
+    position: relative;
+    z-index: 1;
+    margin-top: 3px; /* Geser gambar ke bawah */
+
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    border: 5px solid rgb(2, 219, 248);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 300px; /* Sesuaikan dengan ukuran lingkaran yang diinginkan */
+    height: 300px; /* Sesuaikan dengan ukuran lingkaran yang diinginkan */
+}
+
+nav ul li {
+    position: absolute;
+    margin-top: -30%;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center;
+}
+
+.menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Posisi melingkar di sekitar gambar profil */
+.rating {
+    transform: translate(-50%, -50%) rotate(0deg) translate(150px) rotate(-0deg);
+}
+
+.class {
+    transform: translate(-50%, -50%) rotate(60deg) translate(150px) rotate(-60deg);
+}
+
+.menu {
+    transform: translate(-50%, -50%) rotate(120deg) translate(150px) rotate(-120deg);
+}
+
+.admin {
+    transform: translate(-50%, -50%) rotate(180deg) translate(150px) rotate(-180deg);
+}
+
+.login {
+    transform: translate(-50%, -50%) rotate(240deg) translate(150px) rotate(-240deg);
+}
+
+.portfolio {
+    transform: translate(-50%, -50%) rotate(300deg) translate(150px) rotate(-300deg);
+}
+
+main {
+    padding: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(11, 12, 12);
+    border-radius: 10px;
+    margin-top: 70px;
+}
+
+section {
+    margin-bottom: 0px;
+}
+
+   
+h2 {
+    
+    /* font-weight: bold; */
+    background-color: #d4dee6;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #090a0a;
+        color: rgb(216, 15, 15);
+    }
+    50% {
+        background-color: #090a0a;
+        color: yellow;
+    }
+    100% {
+        background-color: #121414;
+        color: red;
+    }
+}
